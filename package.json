@@ -1,0 +1,19 @@
+{
+  "name": "drc-webp-converter",
+  "author": {
+    "name": "Gustavo Rigoni",
+    "email": "gustrigoni@gmail.com",
+    "url": "https://github.com/gustrigoni"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
