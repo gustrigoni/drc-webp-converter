@@ -1,27 +1,34 @@
 # Conversor de imagens webp
-Neste repositório é usado [FFmpeg](https://www.techtudo.com.br/tudo-sobre/ffmpegl/) uma poderosa 
+
+Neste repositório é usado [FFmpeg](https://www.techtudo.com.br/tudo-sobre/ffmpegl/) uma poderosa
 ferramenta de manipulação de audios, imagens, vídeos e afins... para fazer a conversão de qualquer imagem para uma imagem .webp a partir de uma coleção de URLS
 
 ### 1) Instalar as depedências
-Antes de qualquer coisa, precisamos do [FFmpeg](https://www.techtudo.com.br/tudo-sobre/ffmpegl/) configurado em nosso ambiente, [assita este vídeo](https://www.youtube.com/watch?v=Q267RF1I3GE&t=152s) 
+
+Antes de qualquer coisa, precisamos do [FFmpeg](https://www.techtudo.com.br/tudo-sobre/ffmpegl/) configurado em nosso ambiente, [assita este vídeo](https://www.youtube.com/watch?v=Q267RF1I3GE&t=152s)
 de como fazer isso no seu computador Windows. Após instalar a ferramenta, podemos instalar nossas depedências javascript.
+
 ```
 yarn install
 ```
 
 ### 2) Exemplo de como montar uma coleção de urls de imagens
+
 No arquivo `./src/json/imagesCollectionUrl.json` teremos um json com um array com apenas um objeto como segue o exemplo abaixo.
 Os links listados serão as imagens que iremos converter (imagens que ainda não são webp)
+
 ```
 [
   {
-    "url": "https://avatars.githubusercontent.com/gustrigoni"
+    "url": "https://images.ctfassets.net/h6pb816vj6tr/4FbNg4ht581bW21t65AP2f/95180da1166dbeed9c03ce6c2db2e1ac/hero-image.jpg"
   }
 ]
 ```
 
 ### 3) Rode o projeto
+
 Após de ter feitos os passos anteriores, agora basta converter as imagens 😎
+
 ```
 yarn start
 ```
