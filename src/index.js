@@ -11,6 +11,14 @@ console.time();
 const pathFromDisk = `${process.cwd()}/src`;
 const resultFiles = [];
 
+if (!fs.existsSync('./src/images')){
+  fs.mkdirSync('./src/images');
+}
+
+if (!fs.existsSync('./src/webp')){
+  fs.mkdirSync('./src/webp');
+}
+
 for (let image of imagesCollectionUrl) {
   const imageUrl = image.url || Object.values(image)[0];
 
